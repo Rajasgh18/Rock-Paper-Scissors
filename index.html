@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocks Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="only screen and (max-width:1200px) and (min-width : 850px)" href="large.css">
+    <link rel="stylesheet" media="only screen and (max-width:850px) and (min-width : 650px)" href="small.css">
+    <link rel="stylesheet" media="only screen and (max-width:650px)" href="verysmall.css">
+    <link id="gamecss" rel="stylesheet" href="">
+</head>
+<body>
+
+    <nav>
+        <img src="./images/logo-bonus.svg" alt="Rocks Paper Scissors">
+        <div class="score-board">
+            <h4>SCORE</h4>
+            <h1 id="score-board">0</h1>
+        </div>
+    </nav>
+
+    <section id="gaming-area">
+
+        <section id="game-screen1">
+            <img src="./images/bg-pentagon.svg" alt="" class="pentagon">
+            
+            <div data-btns="Scissors"  id="Scissors" class="gamebtns">
+                <button></button>
+            </div>
+
+            <div data-btns="Paper" id="Paper" class="gamebtns">
+                <button></button>
+            </div>
+            
+            <div data-btns="Rocks"  id="Rocks" class="gamebtns">
+                <button></button>
+            </div>   
+
+            <div data-btns="Lizard"  id="Lizard" class="gamebtns">
+                <button></button>
+            </div>   
+
+            <div data-btns="Spock"  id="Spock" class="gamebtns">
+                <button></button>
+            </div>            
+        </section>
+        
+        <section id="game-screen2">
+            <div id="game-head" class="heading">
+                <h1>YOU PICKED</h1>
+                <h1>THE HOUSE PICKED</h1>
+            </div>
+            <div id="option-selected">
+                <div id="player-selection">
+                    <div class="blank-space"></div>
+                </div>
+
+                <div id="result">
+                    <h1 id="result-head">YOU WON</h1>
+                    <button id="result-button">PLAY AGAIN</button>
+                </div>
+
+                <div id="cpu-selection">
+                    <div class="blank-space"></div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <footer class="footer">
+        <button type="button" id="ruleshow" class="rule">RULES</button>
+        <div class="container">
+            <div class="center-container">
+                <div class="rule-container">
+                    <div class="rule-box">
+                        <h1>RULES</h1>
+                        <button id="cross"><img src="./images/icon-close.svg" alt=""></button>
+                    </div>
+                    <img src="./images/image-rules-bonus.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

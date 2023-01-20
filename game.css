@@ -1,0 +1,277 @@
+#option-selected{
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.Gamebtns{
+    margin-right: 20px;
+    border-radius: 100%;
+    cursor: default;
+    padding: 25px;
+    transform: scale(1);
+    animation: scaleAnim 1.5s ease-in-out;
+}
+@keyframes scaleAnim {
+    from{
+        transform: scale(0);
+    }
+}
+
+#player-selection, #cpu-selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gamebtns button{
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    border-radius: 100%;
+    border: 1px solid grey;
+    background-size: 80px;
+    box-shadow: inset 0px 8px 2px rgb(173, 171, 171);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: default;
+}
+
+#scissors{
+    position: static;
+    background-image: linear-gradient(45deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    box-shadow: inset 0px -10px 2px hsl(39, 89%, 39%);
+}
+#scissors button {
+    background-image: url(./Images/icon-scissors.svg);
+}
+
+#paper{
+    position: static;
+    background-image: linear-gradient(45deg, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    box-shadow: inset 0px -10px 2px hsl(230, 64%, 38%);
+}
+#paper button {
+    background-image: url(./Images/icon-paper.svg);
+}
+
+#rocks{
+    position: static;
+    background-image: linear-gradient(45deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    box-shadow: inset 0px -10px 2px hsl(349, 71%, 30%);
+}
+#rocks button{
+    background-image: url(./Images/icon-rock.svg);
+}
+
+#lizard{
+    position: static;
+    background-image: linear-gradient(45deg, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    box-shadow: inset 0px -10px 2px hsl(261, 48%, 50%);
+}
+#lizard button {
+    background-image: url(./Images/icon-lizard.svg);
+}
+
+#spock{
+    position: static;
+    background-image: linear-gradient(45deg, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    box-shadow: inset 0px -10px 2px hsl(189, 61%, 38%);
+}
+#spock button {
+    background-image: url(./Images/icon-spock.svg);
+}
+
+#result{
+    width: 250px;
+    height: 120px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    animation: scaleAnim1 1.5s ease-in-out;
+}
+@keyframes scaleAnim1 {
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    
+}
+#result-head{
+    font-size: 2.5rem;
+    color: aliceblue;
+    animation: head 1.5s ease-in-out;
+}
+@keyframes head {
+    from{
+        font-size: 0;
+    }
+}
+#result button{
+    width: 190px;
+    color: hsl(214, 47%, 23%);
+    font-size: 1.2rem;
+    padding: 10px;
+    border-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: scaleAnim 1.5s ease-in-out;
+}
+#result button:hover{
+    color: red;
+}
+
+.blank-space{
+    margin-right: 50px;
+    height: 180px;
+    width: 180px;
+    background-color: hsl(228, 74%, 16%);
+    border-radius: 100%;
+}
+
+.pulse{
+    margin-right: 20px;
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:hsl(213, 83%, 81%);
+    border-radius: 50%;
+}
+.pulse span{
+ position: absolute;   
+ height: 100%;
+ width: 100%;
+ background: inherit;
+ border-radius: inherit;
+ animation: pulseAnimation 4s ease-out infinite;
+ animation-delay: calc(1s * var(--i));
+}
+@keyframes pulseAnimation {
+    100%{
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+
+@media (max-width: 850px) and (min-width : 650px) {
+    #option-selected{
+        width: 430px;
+    }
+    .Gamebtns{
+        margin-right: 0px;
+        padding: 18px;
+    }
+    .Gamebtns button{
+        width: 150px;
+        height: 150px;
+        background-size: 50px;
+    }
+
+    #result{
+        width: 130px;
+        height: 90px;
+        margin-right: 0px;
+    }
+    #result-head{
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+    #result button{
+        font-size: 0.9rem;
+        width: 130px;
+    }
+
+    .blank-space{
+        margin-right: 30px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .pulse{
+        margin-right: 0px;
+        width: 180px;
+        height: 180px;
+    }
+    @keyframes pulseAnimation {
+        100%{
+            opacity: 0;
+            transform: scale(1.8);
+        }
+    }
+}
+@media (max-width: 650px){
+    #option-selected{
+        width: 225px;
+    }
+    .Gamebtns{
+        margin-right: 10px;
+        padding: 8px;
+    }
+    .Gamebtns button{
+        width: 60px;
+        height: 60px;
+        background-size: 25px;
+        box-shadow: inset 0px 4px 1px rgb(173, 171, 171);
+    }
+
+    #scissors{
+        box-shadow: inset 0px -4px 1px hsl(39, 89%, 39%);
+    }
+    #paper{
+        box-shadow: inset 0px -4px 1px hsl(230, 64%, 38%);
+    }    
+    #rocks{
+        box-shadow: inset 0px -4px 1px hsl(349, 71%, 30%);
+    }  
+    #lizard{
+        box-shadow: inset 0px -4px 1px hsl(261, 48%, 50%);
+    } 
+    #spock{
+        box-shadow: inset 0px -4px 1px hsl(189, 61%, 38%);
+    }
+
+    #result{
+        width: 65px;
+        height: 42px;
+        margin-right: 10px;
+    }
+    #result-head{
+        font-weight: 400;
+        font-size: 0.7rem;
+    }
+    #result button{
+        font-size: 0.4rem;
+        padding: 5px;
+        border-radius: 5px;
+        width: 60px;
+    }
+
+    .blank-space{
+        margin-right: 25px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .pulse{
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .pulse span {
+        animation: pulseAnimation 3.2s ease-out infinite;
+        animation-delay: calc(0.8s * var(--i));
+    }
+    @keyframes pulseAnimation {
+        100%{
+            opacity: 0;
+            transform: scale(2.5);
+        }
+    }
+}

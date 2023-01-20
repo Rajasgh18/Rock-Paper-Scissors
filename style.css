@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: ubuntu;
+}
+
+/* Main Background Color */
+body{
+    background-image:radial-gradient( circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Title and Score Board */
+nav{
+    width: 700px;
+    margin: 40px 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid hsl(217, 16%, 45%);
+    border-radius: 12px;
+}
+
+.score-board{
+    width: 125px;
+    color: hsl(229, 64%, 46%);
+    background-color: aliceblue;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score-board h4{
+    font-weight: 800;
+}
+.score-board h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color:hsl(229, 25%, 31%);
+}
+
+#gaming-area{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Main game area */
+#game-screen1{
+    position: relative;
+    left: 0%;
+    width: 748px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+}
+
+#game-screen2{
+    position: absolute;
+    top: 25vh;
+    left: 100vw;
+    width: 748px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    display: none;
+    animation: pageAppear1 2s ease-in-out;
+}
+
+@keyframes pageDisappear1 {
+    to{
+        left: -200vw;
+        opacity: 0;
+    }
+}
+@keyframes pageAppear1 {
+    to{
+        left: 30.5vw;
+        opacity: 1;
+    }
+}
+
+@keyframes pageAppear2 { 
+    from{
+        left: -90vw;
+        opacity: 0;
+    }
+    to{
+        left: 30.5vw;
+        opacity: 1;
+    }
+}
+@keyframes pageDisappear2 {
+    to{
+        left: 200vw;
+        opacity: 0;
+    }
+}
+
+.heading{
+    font-size: 1.5rem;
+    height: 100px;
+    margin-bottom: 50px;
+    width: 620px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.pentagon{
+    width: 350px;
+    height: 350px;
+    z-index: -8;
+    display: block;
+    position: absolute;
+    margin: 0px auto;
+}
+
+.gamebtns{
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 16px;
+}
+.gamebtns button{
+    width: 120px;
+    height: 120px;
+    background-color:white;
+    border-radius: 100%;
+    border: 1px solid grey;
+    box-shadow: inset 0px 8px 2px rgb(173, 171, 171);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#Scissors{
+    position: relative;
+    top: -170px;
+    right: -300px;
+    background-image: linear-gradient(45deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    box-shadow: inset 0px -10px 2px hsl(39, 89%, 39%);
+}
+#Scissors button {
+    background-image: url(./Images/icon-scissors.svg);
+}
+#Scissors:hover{
+    background-image: linear-gradient(45deg, hsl(39, 91%, 58%), hsl(40, 91%, 58%));
+}
+
+#Paper{
+    position: relative;
+    top: -44px;
+    left: 317px;
+    background-image: linear-gradient(45deg, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    box-shadow: inset 0px -10px 2px hsl(230, 64%, 38%);
+}
+#Paper button {
+    background-image: url(./Images/icon-paper.svg);
+}
+#Paper:hover{
+    background-image: linear-gradient(45deg, hsl(230, 83%, 65%), hsl(230, 87%, 70%));
+}
+
+#Rocks{
+    position: relative;
+    bottom: -160px;
+    left: 100px;
+    background-image: linear-gradient(45deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    box-shadow: inset 0px -10px 2px hsl(349, 71%, 30%);
+}
+#Rocks button{
+    background-image: url(./Images/icon-rock.svg);
+}
+#Rocks:hover{
+    background-image: linear-gradient(45deg, hsl(349, 84%, 60%), hsl(349, 85%, 62%));
+}
+
+#Lizard{
+    position: relative;
+    bottom: -163px;
+    left: -260px;
+    background-image: linear-gradient(45deg, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    box-shadow: inset 0px -10px 2px hsl(261, 48%, 50%);
+}
+#Lizard button {
+    background-image: url(./Images/icon-lizard.svg);
+}
+#Lizard:hover{
+    background-image: linear-gradient(45deg, hsl(261, 72%, 67%), hsl(261, 84%, 78%));
+}
+
+#Spock{
+    position: relative;
+    bottom: 41px;
+    left: -470px;
+    background-image: linear-gradient(45deg, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    box-shadow: inset 0px -10px 2px hsl(189, 61%, 38%);
+}
+#Spock button {
+    background-image: url(./Images/icon-spock.svg);
+}
+#Spock:hover{
+    background-image: linear-gradient(45deg, hsl(189, 65%, 60%), hsl(189, 69%, 75%));
+}
+
+
+/* Rule area */
+.footer{
+    margin-top: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.rule{
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-right: 200px;
+    padding: 14px 35px;
+    background-color: transparent;
+    border: 4px solid hsl(217, 16%, 45%);
+    border-radius: 12px;
+    cursor: pointer;
+}
+.rule:hover{
+    color:orangered;
+    border-color: orangered;
+}
+
+.container{
+    display: none;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.rule-container{
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+    margin: 0px auto;
+    padding: 30px 40px;
+    width: 320px;
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    animation: ruleAppear 1.25s ease-in-out;
+}
+
+@keyframes ruleAppear {
+    from{
+        left: -30%;
+        opacity: 0;
+    }
+}
+@keyframes ruleDisappear {
+    to{
+        left: -30%;
+        opacity: 0;
+    }
+}
+
+
+.rule-container > img{
+    z-index: 1;
+}
+
+.rule-box{
+    z-index: 1;
+    margin-bottom: 25px;
+    color: hsl(229, 25%, 31%);
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cross{
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+}
+
+.center-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamebtns span{
+    z-index: -1;
+    position: absolute; 
+    top: 0px;  
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgb(175, 195, 240);
+    border-radius: inherit;
+    animation: pulseAnimation 4s ease-out infinite;
+    animation-delay: calc(1s * var(--i));
+}
+@keyframes pulseAnimation {
+    100%{
+        opacity: 0;
+        transform: scale(1.6);
+    }
+}

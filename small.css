@@ -1,0 +1,148 @@
+body{
+    height: fit-content;
+}
+nav{
+    width: 400px;
+    border: 3px solid hsl(217, 16%, 45%);
+}
+nav img{
+    width: 90px;
+    height: 90px;
+}
+.score-board{
+    width: 90px;
+    border-radius: 8px;
+}
+#score-board{
+    font-size: 2rem;
+}
+
+/* ----------Game Screen 1---------- */
+#game-screen1{
+    width: 500px;
+    margin-top: 30px;
+}
+@keyframes pageDisappear1 {
+    to{
+        left: -100%;
+        opacity: 0;
+    }
+}
+@keyframes pageAppear1 {
+    to{
+        left: 17.5%;
+        opacity: 1;
+    }
+}
+
+@keyframes pageAppear2 { 
+    from{
+        left: -90%;
+        opacity: 0;
+    }
+    to{
+        left: 16%;
+        opacity: 1;
+    }
+}
+@keyframes pageDisappear2 {
+    to{
+        left: 300%;
+        opacity: 0;
+    }
+}
+.pentagon{
+    width: 300px;
+    height: 300px;
+}
+.gamebtns{
+    padding: 12px;
+}
+.gamebtns button{
+    width: 90px;
+    height: 90px;
+    background-size: 30px;
+}
+
+#Scissors{
+    top: -148px;
+    right: -230px;
+}
+#Paper{
+    top: -38px;
+    left: 252px;
+}
+#Rocks{
+    bottom: -141px;
+    left: 89px;
+}
+#Lizard{
+    bottom: -140px;
+    left: -207px;
+}
+#Spock{
+    bottom: 38px;
+    left: -372px;
+}
+
+/* ----------Game Screen 2---------- */
+#game-screen2{
+    top: 28%;
+    width: 400px;
+    height: 300px;
+}
+.heading{
+    width: 400px;
+    height: 50px;
+}
+.heading h1{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.footer{
+    margin-top: 0px;
+}
+
+.rule{
+    position: relative;
+    bottom: -20px;
+    margin: 50px auto;
+    font-size: 1rem;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 8px;
+}
+@keyframes ruleUp {
+    to{
+        bottom: 100px;
+    }
+}
+@keyframes ruleDown {
+    to{
+        bottom: -150px;
+    }
+}
+
+.rule-container{
+    width: 200px;
+    left: 25%;
+}
+@keyframes ruleAppear {
+    from{
+        left: -60%;
+        opacity: 0;
+    }
+}
+@keyframes ruleDisappear {
+    to{
+        left: -60%;
+        opacity: 0;
+    }
+}
+.rule-container > img{
+    width: 200px;
+    height: 195px;
+}
+.rule-box{
+    width: 200px;
+}
