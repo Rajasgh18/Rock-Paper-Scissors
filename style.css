@@ -153,9 +153,6 @@ nav{
     background-image: linear-gradient(45deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
     box-shadow: inset 0px -10px 2px hsl(39, 89%, 39%);
 }
-#Scissors button {
-    background-image: url(./Images/icon-scissors.svg);
-}
 #Scissors:hover{
     background-image: linear-gradient(45deg, hsl(39, 91%, 58%), hsl(40, 91%, 58%));
 }
@@ -166,9 +163,6 @@ nav{
     left: 317px;
     background-image: linear-gradient(45deg, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
     box-shadow: inset 0px -10px 2px hsl(230, 64%, 38%);
-}
-#Paper button {
-    background-image: url(./Images/icon-paper.svg);
 }
 #Paper:hover{
     background-image: linear-gradient(45deg, hsl(230, 83%, 65%), hsl(230, 87%, 70%));
@@ -181,9 +175,6 @@ nav{
     background-image: linear-gradient(45deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
     box-shadow: inset 0px -10px 2px hsl(349, 71%, 30%);
 }
-#Rocks button{
-    background-image: url(./Images/icon-rock.svg);
-}
 #Rocks:hover{
     background-image: linear-gradient(45deg, hsl(349, 84%, 60%), hsl(349, 85%, 62%));
 }
@@ -195,9 +186,6 @@ nav{
     background-image: linear-gradient(45deg, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
     box-shadow: inset 0px -10px 2px hsl(261, 48%, 50%);
 }
-#Lizard button {
-    background-image: url(./Images/icon-lizard.svg);
-}
 #Lizard:hover{
     background-image: linear-gradient(45deg, hsl(261, 72%, 67%), hsl(261, 84%, 78%));
 }
@@ -208,9 +196,6 @@ nav{
     left: -470px;
     background-image: linear-gradient(45deg, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
     box-shadow: inset 0px -10px 2px hsl(189, 61%, 38%);
-}
-#Spock button {
-    background-image: url(./Images/icon-spock.svg);
 }
 #Spock:hover{
     background-image: linear-gradient(45deg, hsl(189, 65%, 60%), hsl(189, 69%, 75%));

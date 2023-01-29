@@ -38,7 +38,9 @@
     background-position: center;
     cursor: default;
 }
-
+.Gamebtns button img{
+    transform: scale(1.5);
+}
 #scissors{
     position: static;
     background-image: linear-gradient(45deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
