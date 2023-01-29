@@ -44,17 +44,11 @@
     background-image: linear-gradient(45deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
     box-shadow: inset 0px -10px 2px hsl(39, 89%, 39%);
 }
-#scissors button {
-    background-image: url(./Images/icon-scissors.svg);
-}
 
 #paper{
     position: static;
     background-image: linear-gradient(45deg, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
     box-shadow: inset 0px -10px 2px hsl(230, 64%, 38%);
-}
-#paper button {
-    background-image: url(./Images/icon-paper.svg);
 }
 
 #rocks{
@@ -62,26 +56,17 @@
     background-image: linear-gradient(45deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
     box-shadow: inset 0px -10px 2px hsl(349, 71%, 30%);
 }
-#rocks button{
-    background-image: url(./Images/icon-rock.svg);
-}
 
 #lizard{
     position: static;
     background-image: linear-gradient(45deg, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
     box-shadow: inset 0px -10px 2px hsl(261, 48%, 50%);
 }
-#lizard button {
-    background-image: url(./Images/icon-lizard.svg);
-}
 
 #spock{
     position: static;
     background-image: linear-gradient(45deg, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
     box-shadow: inset 0px -10px 2px hsl(189, 61%, 38%);
-}
-#spock button {
-    background-image: url(./Images/icon-spock.svg);
 }
 
 #result{

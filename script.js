@@ -49,35 +49,35 @@ function selectedGameBtn(name, element){
         case 'Scissors':
             element.innerHTML = `
             <div data-btns="Scissors"  id="scissors" class="Gamebtns">
-                <button></button>
+                <button><img src="./images/icon-scissors.svg" alt=""></button>
             </div>`;
             break;
         
         case 'Paper':
             element.innerHTML = `
             <div data-btns="Paper" id="paper" class="Gamebtns">
-                <button></button>
+                <button><img src="./images/icon-paper.svg" alt=""></button>
             </div>`;
             break;
 
         case 'Rocks':
             element.innerHTML = `
             <div data-btns="Rocks"  id="rocks" class="Gamebtns">
-                <button></button>
+                <button><img src="./images/icon-rock.svg" alt=""></button>
             </div>  `;
             break;
 
         case 'Lizard':
             element.innerHTML = `
             <div data-btns="Lizard"  id="lizard" class="Gamebtns">
-                <button></button>
+                <button><img src="./images/icon-lizard.svg" alt=""></button>
             </div>`;
             break;
 
         case 'Spock':
             element.innerHTML = `
             <div data-btns="Spock"  id="spock" class="Gamebtns">
-                <button></button>
+                <button><img src="./images/icon-spock.svg" alt=""></button>
             </div>`;
             break;
     }
